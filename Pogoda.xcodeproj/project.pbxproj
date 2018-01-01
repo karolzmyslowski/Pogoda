@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BE2C72A8AF20DBDEAF2D529 /* Pods_Pogoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C307C5BB76A136049A7EF4 /* Pods_Pogoda.framework */; };
 		7F1741871FFABA4900710B06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741861FFABA4900710B06 /* AppDelegate.swift */; };
 		7F1741891FFABA4900710B06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741881FFABA4900710B06 /* ViewController.swift */; };
 		7F17418C1FFABA4900710B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F17418A1FFABA4900710B06 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D0D0200AE4A9423B0F55858 /* Pods-Pogoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pogoda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda.debug.xcconfig"; sourceTree = "<group>"; };
 		7F1741831FFABA4900710B06 /* Pogoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pogoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1741861FFABA4900710B06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1741881FFABA4900710B06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		7F1741A21FFABA4900710B06 /* PogodaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PogodaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1741A61FFABA4900710B06 /* PogodaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PogodaUITests.swift; sourceTree = "<group>"; };
 		7F1741A81FFABA4900710B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C307C5BB76A136049A7EF4 /* Pods_Pogoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pogoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0838CF77E3FC94D4714DC14 /* Pods-Pogoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pogoda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE2C72A8AF20DBDEAF2D529 /* Pods_Pogoda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				7F17419A1FFABA4900710B06 /* PogodaTests */,
 				7F1741A51FFABA4900710B06 /* PogodaUITests */,
 				7F1741841FFABA4900710B06 /* Products */,
+				93FD7816C496CE6F2613414C /* Pods */,
+				B81BE8D7DB6FC452B1C8A0D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = PogodaUITests;
 			sourceTree = "<group>";
 		};
+		93FD7816C496CE6F2613414C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D0D0200AE4A9423B0F55858 /* Pods-Pogoda.debug.xcconfig */,
+				F0838CF77E3FC94D4714DC14 /* Pods-Pogoda.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B81BE8D7DB6FC452B1C8A0D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1C307C5BB76A136049A7EF4 /* Pods_Pogoda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F1741AB1FFABA4900710B06 /* Build configuration list for PBXNativeTarget "Pogoda" */;
 			buildPhases = (
+				1211588721F68BF0671AD3A0 /* [CP] Check Pods Manifest.lock */,
 				7F17417F1FFABA4900710B06 /* Sources */,
 				7F1741801FFABA4900710B06 /* Frameworks */,
 				7F1741811FFABA4900710B06 /* Resources */,
+				5513ACDA90EDCF729D42D939 /* [CP] Embed Pods Frameworks */,
+				EB70D881FE915C589721D98A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1211588721F68BF0671AD3A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pogoda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5513ACDA90EDCF729D42D939 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB70D881FE915C589721D98A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F17417F1FFABA4900710B06 /* Sources */ = {
@@ -424,6 +505,7 @@
 		};
 		7F1741AC1FFABA4900710B06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0D0200AE4A9423B0F55858 /* Pods-Pogoda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +521,7 @@
 		};
 		7F1741AD1FFABA4900710B06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0838CF77E3FC94D4714DC14 /* Pods-Pogoda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
