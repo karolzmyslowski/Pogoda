@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BE2C72A8AF20DBDEAF2D529 /* Pods_Pogoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C307C5BB76A136049A7EF4 /* Pods_Pogoda.framework */; };
+		7F0CAC821FFBB1D300A6B19C /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CAC811FFBB1D300A6B19C /* Forecast.swift */; };
 		7F1741871FFABA4900710B06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741861FFABA4900710B06 /* AppDelegate.swift */; };
 		7F1741891FFABA4900710B06 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741881FFABA4900710B06 /* WeatherVC.swift */; };
 		7F17418C1FFABA4900710B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F17418A1FFABA4900710B06 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3D0D0200AE4A9423B0F55858 /* Pods-Pogoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pogoda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda.debug.xcconfig"; sourceTree = "<group>"; };
+		7F0CAC811FFBB1D300A6B19C /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		7F1741831FFABA4900710B06 /* Pogoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pogoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1741861FFABA4900710B06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1741881FFABA4900710B06 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				7F1741921FFABA4900710B06 /* Info.plist */,
 				7F3153B21FFAE2A200FB05AB /* Constants.swift */,
 				7F3153B41FFAE4FB00FB05AB /* cuurrentWeather.swift */,
+				7F0CAC811FFBB1D300A6B19C /* Forecast.swift */,
 			);
 			path = Pogoda;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				7F1741891FFABA4900710B06 /* WeatherVC.swift in Sources */,
 				7F1741871FFABA4900710B06 /* AppDelegate.swift in Sources */,
 				7F3153B31FFAE2A200FB05AB /* Constants.swift in Sources */,
+				7F0CAC821FFBB1D300A6B19C /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -19,12 +20,15 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentTypeLabel: UILabel!
     @IBOutlet weak var TableView: UITableView!
     
-    var currentWeatherr = currentWeather()
-    
+    var currentWeatherr: currentWeather!
+    var forecast: Forecast
+    var forecasts = [Forecast]()
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.delegate = self
         TableView.dataSource = self
+        currentWeatherr = currentWeather()
+        forecast = Forecast()
         currentWeatherr.downloadWeatherDetails {
             self.updateMainUI()
         }
@@ -49,5 +53,24 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         locationLabel.text = currentWeatherr.cityName
         currentImage.image = UIImage(named: currentWeatherr.weatherType)
     }
+    
+    func downloadForecastData(completed: DownloadComplete) {
+        let forecastURL = URL(string: FORECAST_URL)!
+        Alamofire.request(forecastURL).responseJSON { response in
+            let result = response.result
+            
+            if let dict = result.value as? Dictionary<String,AnyObject> {
+                
+                if let list = dict["list"] as? [Dictionary<String,AnyObject>] {
+                    for obj in list {
+                        let forecast = Forecast(weatherDict: obj)
+                        self.forecasts.append(forecast)
+                    }
+                }
+            }
+        }
+    }
+    
+    
 }
 
