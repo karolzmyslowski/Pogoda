@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		0BE2C72A8AF20DBDEAF2D529 /* Pods_Pogoda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C307C5BB76A136049A7EF4 /* Pods_Pogoda.framework */; };
 		7F1741871FFABA4900710B06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741861FFABA4900710B06 /* AppDelegate.swift */; };
-		7F1741891FFABA4900710B06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741881FFABA4900710B06 /* ViewController.swift */; };
+		7F1741891FFABA4900710B06 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741881FFABA4900710B06 /* WeatherVC.swift */; };
 		7F17418C1FFABA4900710B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F17418A1FFABA4900710B06 /* Main.storyboard */; };
 		7F17418E1FFABA4900710B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F17418D1FFABA4900710B06 /* Assets.xcassets */; };
 		7F1741911FFABA4900710B06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F17418F1FFABA4900710B06 /* LaunchScreen.storyboard */; };
 		7F17419C1FFABA4900710B06 /* PogodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17419B1FFABA4900710B06 /* PogodaTests.swift */; };
 		7F1741A71FFABA4900710B06 /* PogodaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1741A61FFABA4900710B06 /* PogodaUITests.swift */; };
+		7F3153B31FFAE2A200FB05AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3153B21FFAE2A200FB05AB /* Constants.swift */; };
+		7F3153B51FFAE4FB00FB05AB /* cuurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3153B41FFAE4FB00FB05AB /* cuurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		3D0D0200AE4A9423B0F55858 /* Pods-Pogoda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pogoda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda.debug.xcconfig"; sourceTree = "<group>"; };
 		7F1741831FFABA4900710B06 /* Pogoda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pogoda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1741861FFABA4900710B06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F1741881FFABA4900710B06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F1741881FFABA4900710B06 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		7F17418B1FFABA4900710B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F17418D1FFABA4900710B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1741901FFABA4900710B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		7F1741A21FFABA4900710B06 /* PogodaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PogodaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1741A61FFABA4900710B06 /* PogodaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PogodaUITests.swift; sourceTree = "<group>"; };
 		7F1741A81FFABA4900710B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F3153B21FFAE2A200FB05AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F3153B41FFAE4FB00FB05AB /* cuurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cuurrentWeather.swift; sourceTree = "<group>"; };
 		E1C307C5BB76A136049A7EF4 /* Pods_Pogoda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pogoda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0838CF77E3FC94D4714DC14 /* Pods-Pogoda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pogoda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pogoda/Pods-Pogoda.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,11 +109,13 @@
 			isa = PBXGroup;
 			children = (
 				7F1741861FFABA4900710B06 /* AppDelegate.swift */,
-				7F1741881FFABA4900710B06 /* ViewController.swift */,
+				7F1741881FFABA4900710B06 /* WeatherVC.swift */,
 				7F17418A1FFABA4900710B06 /* Main.storyboard */,
 				7F17418D1FFABA4900710B06 /* Assets.xcassets */,
 				7F17418F1FFABA4900710B06 /* LaunchScreen.storyboard */,
 				7F1741921FFABA4900710B06 /* Info.plist */,
+				7F3153B21FFAE2A200FB05AB /* Constants.swift */,
+				7F3153B41FFAE4FB00FB05AB /* cuurrentWeather.swift */,
 			);
 			path = Pogoda;
 			sourceTree = "<group>";
@@ -340,8 +346,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F1741891FFABA4900710B06 /* ViewController.swift in Sources */,
+				7F3153B51FFAE4FB00FB05AB /* cuurrentWeather.swift in Sources */,
+				7F1741891FFABA4900710B06 /* WeatherVC.swift in Sources */,
 				7F1741871FFABA4900710B06 /* AppDelegate.swift in Sources */,
+				7F3153B31FFAE2A200FB05AB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
